@@ -33,6 +33,6 @@ public class GetEmployeeDetailsTest {
     }
     @Test(groups = {Categories.SMOKE})
     public void verifyResponseWithCompanyData() {
-        assertEquals(employeeData.COMPANY_NAME+" Pvt. Ltd.", getEmployeeDetailsResponse.getEmployeeData().get(0).getCompany());
+        assertEquals(employeeData.COMPANY_NAME, getEmployeeDetailsResponse.getEmployeeData().get(0).getCompany());
     }
 }
