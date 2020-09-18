@@ -15,7 +15,7 @@ public class GetEmployeeDetailsTest {
     GetEmployeeDetailsResponse getEmployeeDetailsResponse = new GetEmployeeDetailsClient().getEmployeeDetails();
 
     @Test(groups = {Categories.SMOKE})
-    public void shouldTestGetEmployeeDetailsStatusCodes() {
+    public void shouldTestGetEmployeeDetailsStatusCode() {
         assertEquals(getEmployeeDetailsResponse.getHttpStatusCode(), 200);
     }
     @Test(groups = {Categories.SMOKE})
